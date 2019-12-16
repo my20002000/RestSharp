@@ -128,7 +128,7 @@ namespace RestSharp
         public IList<DecompressionMethods> AllowedDecompressionMethods =>
             _allowedDecompressionMethods.Any()
                 ? _allowedDecompressionMethods
-                : new[] {DecompressionMethods.None, DecompressionMethods.Deflate, DecompressionMethods.GZip};
+                : new[] {DecompressionMethods.None, DecompressionMethods.Deflate, DecompressionMethods.GZip, DecompressionMethods.Brotli};
 
         /// <summary>
         ///     Always send a multipart/form-data request - even when no Files are present.
@@ -594,7 +594,7 @@ namespace RestSharp
         /// <summary>
         ///     Add a Decompression Method to the request
         /// </summary>
-        /// <param name="decompressionMethod">None | GZip | Deflate</param>
+        /// <param name="decompressionMethod">None | GZip | Deflate | Brotli </param>
         /// <returns></returns>
         public IRestRequest AddDecompressionMethod(DecompressionMethods decompressionMethod)
         {
