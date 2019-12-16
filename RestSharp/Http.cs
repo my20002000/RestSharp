@@ -74,7 +74,7 @@ namespace RestSharp
         protected bool HasFiles => Files.Any();
 
         /// <summary>
-        /// Enable or disable automatic gzip/deflate decompression
+        /// Enable or disable automatic gzip/deflate/brotli decompression
         /// </summary>
         public bool AutomaticDecompression { get; set; }
 
