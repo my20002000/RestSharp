@@ -39,7 +39,7 @@ namespace RestSharp
         ICredentials Credentials { get; set; }
 
         /// <summary>
-        /// Enable or disable automatic gzip/deflate decompression
+        /// Enable or disable automatic gzip/deflate/brotli decompression
         /// </summary>
         bool AutomaticDecompression { get; set; }
 
