@@ -236,7 +236,7 @@ namespace RestSharp
             if (AutomaticDecompression)
             {
                 webRequest.AutomaticDecompression =
-                    DecompressionMethods.Deflate | DecompressionMethods.GZip | DecompressionMethods.None;
+                    DecompressionMethods.Deflate | DecompressionMethods.GZip | DecompressionMethods.Brotli | DecompressionMethods.None;
             }
 
             if (Timeout != 0)
