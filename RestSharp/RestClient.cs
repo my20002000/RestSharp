@@ -137,7 +137,7 @@ namespace RestSharp
         Action<HttpWebRequest> WebRequestConfigurator { get; set; }
 
         /// <summary>
-        /// Enable or disable automatic gzip/deflate decompression
+        /// Enable or disable automatic gzip/deflate/brotli decompression
         /// </summary>
         public bool AutomaticDecompression { get; set; }
 
